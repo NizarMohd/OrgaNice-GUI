@@ -51,7 +51,7 @@
                                        <children>
                                           <SplitPane orientation="VERTICAL" prefHeight="113.6" prefWidth="190.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                             <items>
-                                                <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exit" prefHeight="113.0" prefWidth="174.0" text="Exit" />
+                                                <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exit" prefHeight="113.0" prefWidth="190.4" text="Exit" />
                                             </items>
                                           </SplitPane>
                                        </children>

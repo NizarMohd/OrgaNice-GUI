@@ -73,7 +73,6 @@ public class EventTableController implements Initializable {
     }
 
     public static void storeToMap(Event event) {
-        System.out.println("Storing: " + event.getDetailsID());
         LocalDate localDate = LocalDate.parse(event.getDateID(), DateTimeFormatter.ISO_LOCAL_DATE);
         eventHashMap.computeIfAbsent(localDate, k -> new LinkedList<Event>());
         eventHashMap.get(localDate).add(event);

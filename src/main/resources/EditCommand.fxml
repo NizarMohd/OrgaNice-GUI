@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="390.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.EditCommandController">
+   <children>
+      <SplitPane fx:id="splitPlane" dividerPositions="0.2706185567010309" layoutY="-14.0" orientation="VERTICAL" prefHeight="350.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="97.0" prefWidth="598.0">
+               <children>
+                  <ChoiceBox fx:id="choiceBox" layoutX="343.0" layoutY="35.0" prefWidth="150.0" />
+                  <Button fx:id="edit" layoutX="508.0" layoutY="35.0" mnemonicParsing="false" text="EDIT" />
+                  <Label fx:id="label" layoutX="14.0" layoutY="34.0" maxWidth="-Infinity" prefHeight="26.0" prefWidth="313.0" text="Label" />
+               </children>
+            </AnchorPane>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="279.0" prefWidth="598.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

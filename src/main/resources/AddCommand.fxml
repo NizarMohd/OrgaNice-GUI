@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AddCommandController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="129.0" layoutY="65.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="21.0" text="Event" />
+                  <DatePicker fx:id="eventDate" layoutX="34.0" layoutY="70.0" promptText="Event Date" />
+                  <JFXTimePicker fx:id="startTime" layoutX="34.0" layoutY="136.0" promptText="Start Time" />
+                  <JFXTimePicker fx:id="endTime" layoutX="252.0" layoutY="138.0" promptText="End Time" />
+                  <JFXTextField fx:id="eventDetails" labelFloat="true" layoutX="242.0" layoutY="70.0" promptText="Enter Event details" />
+                  <JFXButton fx:id="addEvent" layoutX="487.0" layoutY="136.0" onAction="#addEventTask" text="Add Event" />
+                  <JFXTextField fx:id="eventPriority" labelFloat="true" layoutX="432.0" layoutY="70.0" promptText="Enter Priority" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <JFXButton fx:id="addDeadline" layoutX="480.0" layoutY="138.0" onAction="#addDeadlineTask" text="Add Deadline" />
+                  <JFXTimePicker fx:id="dueTime" layoutX="35.0" layoutY="125.0" promptText="Due Time" />
+                  <Label layoutX="50.0" layoutY="23.0" text="Deadline" />
+                  <DatePicker fx:id="dueDate" layoutX="35.0" layoutY="69.0" promptText="Due Date" />
+                  <JFXTextField fx:id="deadlineDetails" labelFloat="true" layoutX="291.0" layoutY="69.0" promptText="Enter Deadline details" />
+                  <JFXTextField fx:id="priorityTxt" labelFloat="true" layoutX="291.0" layoutY="126.0" promptText="Enter Priority" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

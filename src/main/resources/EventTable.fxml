@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Menu?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="185.6" prefWidth="598.4" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.EventTableController">
+<children>
+    <TableView fx:id="eventTable" layoutX="-105.0" layoutY="-7.0" prefHeight="238.0" prefWidth="502.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="eventID" prefWidth="52.00003129243851" text="EVENT" />
+            <TableColumn fx:id="eventDetailsID" prefWidth="241.59992599487305" text="DETAILS" />
+            <TableColumn fx:id="eventDateID" prefWidth="79.2000732421875" text="DATE" />
+            <TableColumn fx:id="eventStartID" prefWidth="88.79998779296875" text="START" />
+            <TableColumn fx:id="eventEndID" minWidth="0.0" prefWidth="65.5999755859375" text="END" />
+            <TableColumn fx:id="eventPriorityID" prefWidth="71.99993896484375" text="PRIORITY" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                  <MenuItem fx:id="delete" onAction="#delete" mnemonicParsing="false" text="delete" />
+                  <MenuItem fx:id="edit"  onAction="#edit" mnemonicParsing="false" text ="edit"/>
+              </items>
+            </ContextMenu>
+         </contextMenu>
+    </TableView>
+</children>
+</AnchorPane>

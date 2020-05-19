@@ -25,13 +25,13 @@ public class TaskManagerController implements Initializable {
     public TextField searchField;
 
     @FXML
-    private SplitPane splitPane;
+    public SplitPane splitPane;
 
     @FXML
-    private AnchorPane anchorPane;
+    public AnchorPane anchorPane;
 
     @FXML
-    private Button add;
+    public Button add;
     static TextField currentSearchField;
 
 

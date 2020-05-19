@@ -19,13 +19,13 @@ public class NavigationDrawerController implements Initializable {
 
     public static final String SIDE_PANEL = "SidePanel.fxml";
     @FXML
-    private  AnchorPane anchorPane;
+    public  AnchorPane anchorPane;
 
     @FXML
-    private JFXHamburger hamburger;
+    public JFXHamburger hamburger;
 
     @FXML
-    private JFXDrawer drawer;
+    public JFXDrawer drawer;
 
 
     private static JFXDrawer currentDrawer;

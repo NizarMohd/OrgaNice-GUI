@@ -30,23 +30,23 @@ public class EventTableController implements Initializable {
     public static final String DELETE_COMMAND = "DeleteCommand.fxml";
 
     @FXML
-    private MenuItem delete;
+    public MenuItem delete;
     @FXML
-    private MenuItem edit;
+    public MenuItem edit;
     @FXML
-    private TableView<Event> eventTable;
+    public TableView<Event> eventTable;
     @FXML
-    private TableColumn<Event, String> eventID;
+    public TableColumn<Event, String> eventID;
     @FXML
-    private TableColumn<Event, String> eventDetailsID;
+    public TableColumn<Event, String> eventDetailsID;
     @FXML
-    private TableColumn<Event, String> eventDateID;
+    public TableColumn<Event, String> eventDateID;
     @FXML
-    private TableColumn<Event, String> eventStartID;
+    public TableColumn<Event, String> eventStartID;
     @FXML
-    private TableColumn<Event, String> eventEndID;
+    public TableColumn<Event, String> eventEndID;
     @FXML
-    private TableColumn<Event, String> eventPriorityID;
+    public TableColumn<Event, String> eventPriorityID;
 
     private static ObservableList<Event> eventObservableList = FXCollections.observableArrayList();
     static HashMap<LocalDate, LinkedList<Event>> eventHashMap = new HashMap<>();

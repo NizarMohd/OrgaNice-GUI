@@ -18,49 +18,49 @@ import java.util.ResourceBundle;
 public class EditEventsDialogController implements Initializable {
     public static final String EVENT_EDIT_SUCCESS = "Event Edit Success!/Successfully edited event information!";
     @FXML
-    private Label labelDetails;
+    public Label labelDetails;
 
     @FXML
-    private Label labelDate;
+    public Label labelDate;
 
     @FXML
-    private Label labelStart;
+    public Label labelStart;
 
     @FXML
-    private Label labelEnd;
+    public Label labelEnd;
 
     @FXML
-    private Label labelPriority;
+    public Label labelPriority;
 
     @FXML
-    private JFXDatePicker newDate;
+    public JFXDatePicker newDate;
 
     @FXML
-    private JFXTimePicker newStart;
+    public JFXTimePicker newStart;
 
     @FXML
-    private JFXTimePicker newEnd;
+    public JFXTimePicker newEnd;
 
     @FXML
-    private JFXTextField newPriority;
+    public JFXTextField newPriority;
 
     @FXML
-    private JFXTextField newDetails;
+    public JFXTextField newDetails;
 
     @FXML
-    private JFXTextField eventID;
+    public JFXTextField eventID;
 
     @FXML
-    private Button done;
+    public Button done;
 
     private void getDetails(Event event) {
 
         try {
-            if(!newDetails.getText().isBlank()) {
+            if(!newDetails.getText().isEmpty()) {
                 TaskManagerInputValidator.checkDetails(newDetails.getText());
                 event.setDetailsID(newDetails.getText());
             }
-            if(!newPriority.getText().isBlank()){
+            if(!newPriority.getText().isEmpty()){
                 TaskManagerInputValidator.checkPriority(newPriority.getText());
                 event.setPriorityID(newPriority.getText());
             }

@@ -29,13 +29,13 @@ public class CalendarViewDialogController implements Initializable {
     private Label label;
 
     @FXML
-    private Button done;
+    public Button done;
 
     @FXML
-    private ChoiceBox<String> monthChoice;
+    public ChoiceBox<String> monthChoice;
 
     @FXML
-    private ChoiceBox<String> yearChoice;
+    public ChoiceBox<String> yearChoice;
     static Month month;
     static int year;
     private static Stage currentStage;

@@ -23,11 +23,11 @@ public class DeleteCommandController implements Initializable {
     public static final String EVENT_INPUT_REQUEST = "Please enter the index of the event task that you wish to delete";
     public static final String INDEX_INPUT_REQUEST = "Enter index";
     @FXML
-    private Label label;
+    public Label label;
     @FXML
-    private Button delete;
+    public Button delete;
     @FXML
-    private ChoiceBox<String> choiceBox;
+    public ChoiceBox<String> choiceBox;
     private static final String DEADLINE = "deadline";
     private static final String EVENTS = "event";
     private static String taskType;

@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
 public class DayOfWeekController implements Initializable {
 
     @FXML
-    private Label day;
+    public Label day;
     private static String[] days = {"SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"};
 
     @Override

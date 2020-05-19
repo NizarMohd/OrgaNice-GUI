@@ -24,7 +24,7 @@
                   </ImageView>
                   <ImageView fitHeight="150.0" fitWidth="180.0" layoutX="-22.0" layoutY="-6.0" opacity="0.75" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <image>
-                        <Image url="@../../../../../Desktop/thumb2-lines-lollipop-geometry-abstract-material-strips.jpg" />
+                        <Image url="Organice.jpg" />
                      </image>
                   </ImageView>
                </children>

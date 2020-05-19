@@ -28,24 +28,22 @@ import java.util.ResourceBundle;
 public class DeadlineTableController implements Initializable {
 
     public static final String DELETE_COMMAND = "DeleteCommand.fxml";
+
+
     @FXML
-    private MenuItem delete;
-   @FXML
-    private MenuItem edit;
+    public TableView<Deadline> deadlineTable;
     @FXML
-    private TableView<Deadline> deadlineTable;
+    public TableColumn<Deadline, String> deadlineID;
     @FXML
-    private TableColumn<Deadline, String> deadlineID;
+    public TableColumn<Deadline, String> deadlineStatusID;
     @FXML
-    private TableColumn<Deadline, String> deadlineStatusID;
+    public TableColumn<Deadline, String> deadlineDetailsID;
     @FXML
-    private TableColumn<Deadline, String> deadlineDetailsID;
+    public TableColumn<Deadline, String> deadlineDateID;
     @FXML
-    private TableColumn<Deadline, String> deadlineDateID;
+    public TableColumn<Deadline, String> deadlineDueTimeID;
     @FXML
-    private TableColumn<Deadline, String> deadlineDueTimeID;
-    @FXML
-    private TableColumn<Deadline, String> deadlinePriorityID;
+    public TableColumn<Deadline, String> deadlinePriorityID;
 
     private static ObservableList<Deadline> deadlineObservableList = FXCollections.observableArrayList();
     static HashMap<LocalDate, LinkedList<Deadline>> deadlineHashMap = new HashMap<>();

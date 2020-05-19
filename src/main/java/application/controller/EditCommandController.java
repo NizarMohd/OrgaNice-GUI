@@ -30,16 +30,16 @@ public class EditCommandController implements Initializable {
     public static final String EVENT_INPUT_REQUEST = "Please Enter the ID of the Event that you wish to edit";
     public static final String DEADLINE_INPUT_REQUEST = "Please Enter the ID of the Deadline that you wish to edit";
     @FXML
-    private SplitPane splitPlane;
+    public SplitPane splitPlane;
 
     @FXML
-    private ChoiceBox<String> choiceBox;
+    public ChoiceBox<String> choiceBox;
 
     @FXML
-    private Button edit;
+    public Button edit;
 
     @FXML
-    private Label label;
+    public Label label;
 
     private static final String EVENT = "event";
     private static final String DEADLINE = "deadline";

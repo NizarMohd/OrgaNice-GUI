@@ -41,37 +41,37 @@ public class AddCommandController implements Initializable {
     public static final String ADD_COMMAND = "AddCommand.fxml";
 
     @FXML
-    private DatePicker eventDate;
+    public DatePicker eventDate;
 
     @FXML
-    private JFXTimePicker startTime;
+    public JFXTimePicker startTime;
 
     @FXML
-    private JFXTimePicker endTime;
+    public JFXTimePicker endTime;
 
     @FXML
-    private JFXTextField eventDetails;
+    public JFXTextField eventDetails;
 
     @FXML
-    private JFXButton addEvent;
+    public JFXButton addEvent;
 
     @FXML
-    private JFXButton addDeadline;
+    public JFXButton addDeadline;
 
     @FXML
-    private JFXTimePicker dueTime;
+    public JFXTimePicker dueTime;
 
     @FXML
-    private DatePicker dueDate;
+    public DatePicker dueDate;
 
     @FXML
-    private JFXTextField deadlineDetails;
+    public JFXTextField deadlineDetails;
 
     @FXML
-    private JFXTextField priorityTxt;
+    public JFXTextField priorityTxt;
 
     @FXML
-    private JFXTextField eventPriority;
+    public JFXTextField eventPriority;
 
     static Stage currentStage;
 

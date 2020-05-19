@@ -56,7 +56,7 @@ public class TaskManagerInputValidator {
     public static void checkNullInput(String[] input) {
         boolean isBlank = false;
         for (String s : input) {
-            isBlank = isBlank || s.isBlank();
+            isBlank = isBlank || s.isEmpty();
         }
         isNull &= !isBlank;
     }

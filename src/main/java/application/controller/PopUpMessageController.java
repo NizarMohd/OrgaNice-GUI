@@ -15,7 +15,7 @@ public class PopUpMessageController {
     public static final String WARNING_DIALOG = "Warning Dialog";
     public static final String EMPTY_INPUTS = "Empty inputs";
     public static final String EXCEPTION_DIALOG = "Exception Dialog";
-    public static final String INPUT_ERROR = "Input Error";
+    public static final String EXCEPTION_DETECTED = "Exception detected";
     public static final String STACKTRACE_DETAIL = "The exception stacktrace was:";
     public static final String SUCCESS = "Success!";
     public static final String DELIMITER = "/";
@@ -43,7 +43,7 @@ public class PopUpMessageController {
     public static void createExceptionMessage(Exception e) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(EXCEPTION_DIALOG);
-        alert.setHeaderText(INPUT_ERROR);
+        alert.setHeaderText(EXCEPTION_DETECTED);
         alert.setContentText(e.getMessage());
         StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);

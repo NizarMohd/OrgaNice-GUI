@@ -18,16 +18,16 @@ public class SidePanelController {
     static AnchorPane taskManagerAnchorPane = new AnchorPane();
     static Stage taskManagerStage;
     @FXML
-    private VBox Vbox;
+    public VBox Vbox;
 
     @FXML
-    private Button taskManagerBtn;
+    public Button taskManagerBtn;
 
     @FXML
-    private Button calViewBtn;
+    public Button calViewBtn;
 
     @FXML
-    private Button exitBtn;
+    public Button exitBtn;
 
     @FXML
     void exit(ActionEvent event) {

@@ -22,40 +22,40 @@ public class EditDeadlineDialogController implements Initializable {
     public static final String FALSE = "false";
     public static final String TRUE = "true";
     @FXML
-    private Label labelDetails;
+    public Label labelDetails;
 
     @FXML
-    private Label labelDate;
+    public Label labelDate;
 
     @FXML
-    private Label labelDueTime;
+    public Label labelDueTime;
 
     @FXML
-    private Label labelStatus;
+    public Label labelStatus;
 
     @FXML
-    private Label labelPriority;
+    public Label labelPriority;
 
     @FXML
-    private JFXDatePicker newDate;
+    public JFXDatePicker newDate;
 
     @FXML
-    private JFXTimePicker newTime;
+    public JFXTimePicker newTime;
 
     @FXML
-    private JFXTextField newPriority;
+    public JFXTextField newPriority;
 
     @FXML
-    private JFXTextField newDetails;
+    public JFXTextField newDetails;
 
     @FXML
-    private JFXTextField deadlineID;
+    public JFXTextField deadlineID;
 
     @FXML
-    private Button done;
+    public Button done;
 
     @FXML
-    private ChoiceBox<String> newStatus;
+    public ChoiceBox<String> newStatus;
 
     private void getDetails(Deadline deadline) {
 
@@ -64,11 +64,11 @@ public class EditDeadlineDialogController implements Initializable {
         }
 
         try {
-            if(!newDetails.getText().isBlank()) {
+            if(!newDetails.getText().isEmpty()) {
                 TaskManagerInputValidator.checkDetails(newDetails.getText());
                 deadline.setDetailsID(newDetails.getText());
             }
-            if(!newPriority.getText().isBlank()){
+            if(!newPriority.getText().isEmpty()){
                 TaskManagerInputValidator.checkPriority(newPriority.getText());
                 deadline.setPriorityID(newPriority.getText());
             }

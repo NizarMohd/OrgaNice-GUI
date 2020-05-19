@@ -22,7 +22,7 @@ public class CalendarViewController implements Initializable {
     public static final String DAY_OF_WEEK = "DayOfWeek.fxml";
     public static final String DAY_OF_MONTH = "DayOfMonth.fxml";
     @FXML
-    private GridPane gridPane;
+    public GridPane gridPane;
 
     static int[] daysOfMonths;
     static int dayOfWeekIndex;

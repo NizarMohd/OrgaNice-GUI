@@ -34,13 +34,13 @@ public class DukeController {
     static AnchorPane rootDrawer;
 
     @FXML
-    private TextField txtUserName;
+    public TextField txtUserName;
 
     @FXML
-    private PasswordField txtPassword;
+    public PasswordField txtPassword;
 
     @FXML
-    private Label lblStatus;
+    public Label lblStatus;
 
     public void login(ActionEvent action) {
         boolean isUserName = txtUserName.getText().equals("user");

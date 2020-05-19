@@ -21,19 +21,19 @@ public class DayOfMonthController implements Initializable {
     public static final int NULL_INT = 0;
 
     @FXML
-    private Label date;
+    public Label date;
 
     @FXML
-    private Label taskTwo;
+    public Label taskTwo;
 
     @FXML
-    private Label taskThree;
+    public Label taskThree;
 
     @FXML
-    private Label taskFour;
+    public Label taskFour;
 
     @FXML
-    private Label taskOne;
+    public Label taskOne;
 
 
     public void setTaskTwo(String taskTwo) {
@@ -61,7 +61,7 @@ public class DayOfMonthController implements Initializable {
         size = Math.min(pairs.size(), 4);
 
         for( int i =0; i < size ; i ++) {
-            if (!pairs.get(i).getKey().isBlank()) {
+            if (!pairs.get(i).getKey().isEmpty()) {
                 switch (i) {
                     case 0:
                         setTaskOne(pairs.get(i).getKey());
